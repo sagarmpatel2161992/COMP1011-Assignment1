@@ -11,5 +11,22 @@ public class Hero {
 		generateAbility();
 	}
 	
+	 private void generateAbility()
+	{
+		this.strength = (int) ((Math.random()*100 +1)%100);
+		this.speed = (int) ((Math.random()*100 +1)%100);
+		this.health = (int) ((Math.random()*100 +1)%100);
+	}
+	 
+	 public void fight()
+	 {		
+		if(hitAttempt())
+		{
+			int damage = hitDamage();
+			System.out.println("Damage is " + damage);
+		}
+		
+	 }
+	 
 	 		
 }
