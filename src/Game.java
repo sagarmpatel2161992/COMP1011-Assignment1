@@ -4,6 +4,7 @@
 
 /**
  * @author SAGAR
+ * Program Description - Main Method for Hero Class 
  *
  */
 public class Game {
@@ -20,11 +21,12 @@ public class Game {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Hero sagar = new Hero("Saggy");
 		sagar.show();
 		sagar.fight();
-		sagar.show();
+		sagar.fight();
+		sagar.fight();		
 
 	}
 
