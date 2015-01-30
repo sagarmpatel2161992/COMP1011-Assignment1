@@ -27,9 +27,9 @@ public class Hero {
 
 	//generating random strength, speed and health
 	private void generateAbility() {
-		this.strength = (int) (Math.random() * 100 + 1) % 100;
-		this.speed = (int) (Math.random() * 100 + 1) % 100;
-		this.health = (int) (Math.random() * 100 + 1) % 100;
+		this.strength = (int) ((Math.random()*100 % 100) +1);
+		this.speed = (int) ((Math.random()*100 % 100) +1);
+		this.health = (int) ((Math.random()*100 % 100) +1);
 	}
 
 	// fight method defined
@@ -45,7 +45,7 @@ public class Hero {
 	// hitAttempt method declaration 
 	public boolean hitAttempt() {
 		// generating random number between 1 to 100
-		int hitrandom = (int) (Math.random()*100 + 1) % 101;
+		int hitrandom = (int) ((Math.random()*100 % 100) +1);
 		
 		//System.out.println("Hit random number:(which will return true if it's between(1-20)):" + hitrandom);
 
@@ -59,12 +59,12 @@ public class Hero {
 
 	// HitDamage returns integer by multiplying strength of t=hero to factor(between 1-6)  
 	public int hitDamage() {		
-		int factor = (int) (Math.random()*1000000 + 1) % 7;
+		int factor = (int) (((Math.random()*1000000) % 6) +1);
 		System.out.println("factor(Which must be between (1-6)):" + factor);
 		return (this.strength * factor);
 	}
 
-	// show methid to display hero's ability and damage
+	// show method to display hero's ability and damage
 	public void show() {
 		System.out.println("\nAbility Of " + this.name);
 		System.out.println("------------------------------------------------");

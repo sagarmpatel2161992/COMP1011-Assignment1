@@ -4,7 +4,9 @@
 
 /**
  * @author SAGAR
- * Program Description - Main Method for Hero Class 
+ * Program Description - Main Method for Hero Class
+ * Version: 1.0 29th january 2015
+ *  
  *
  */
 public class Game {
@@ -26,7 +28,10 @@ public class Game {
 		sagar.show();
 		sagar.fight();
 		sagar.fight();
-		sagar.fight();		
+		sagar.fight();
+		
+//		SuperHero sag = new SuperHero("Sag");
+//		sag.showPowers();
 
 	}
 
